@@ -1,0 +1,400 @@
+$dark-blue: #213159
+$sky-blue: #3d6098
+$red: #f04b4c
+$grey: #e7e7e7
+
+//full width container
+.container-fluid
+	padding: 0
+	overflow: hidden
+	width: 100vw
+
+html
+	overflow-x: hidden !important
+
+//Reset some bootstrap predefined characteristics
+.reset
+	padding: 0 10%
+	border-radius: 0
+	margin: 0
+
+//Button style reset
+.btn
+	outline: none
+	border: none
+.btn:focus,.btn:active 
+	outline: none 
+.btn:active
+	box-shadow: inset 0 0.1px 7px 0.3px rgba(0,0,0,0.6)
+
+
+
+//Navigation Bar Style
+.navbar
+	@extend .reset
+
+	background-color: rgba(0,0,0,0.2)
+	border: none
+
+	transition: all 0.5s ease
+
+	.navbar-brand
+		font-size: 1.9em
+		color: $grey
+		font-family: 'Nova Square', cursive
+		position: relative
+		
+	.navbar-collapse ul li a
+		font-size: 1.2em
+		color: $grey
+		font-family: 'Nova Square', cursive
+	
+	.navbar-header, .navbar-right > li
+		padding: 15px 25px
+	
+	//Set brand image
+	a span
+		background-image: url("https://cdn2.iconfinder.com/data/icons/real-flat-security/512/accept-512.png")
+		background-size: cover
+
+		width: 1.5em
+		height: 1.5em
+
+		position: absolute
+		top: 50%
+		left: -1em
+		transform: translate(0,-50%)
+
+//Add transition and font to all the navbar elements
+.navbar, .navbar * 
+	transition: all 0.5s ease 
+	font-family: 'Nova Square', cursive
+	
+//Changes the background color and reduces the size of the navbar when added
+.smallNavbar
+	background-color: black
+
+	.navbar-header, .navbar-right > li
+		padding-top: 6px!important
+		padding-bottom: 6px!important
+
+
+
+
+//Get started section
+div.jumbotron:first-of-type
+	@extend .reset
+	
+	height: 100vh
+	background-image: url(http://www.agenda-screening.co.uk/agenda-cms/uploads/agenda-old-news-images/2014/06/CyperSecurity.jpg)
+	background-size: cover
+	background-attachment: fixed
+		
+	border: 1px solid transparent
+
+	div
+		width: 70%
+		margin: auto
+		position: relative
+		top: 50%
+		transform: translate(0,-50%)
+		text-align: center
+		background-color: rgba(0,0,0,0.2)
+		border-radius: 1em
+
+		h1
+			font-size: 3.5em
+			padding-bottom: 1em
+			color: $grey
+			line-height: 2em
+
+		button
+			background-color: $red
+			outline: none
+			border: none
+		button:focus
+			outline: none
+			border: none
+
+	div > *
+		color: white
+		font-family: 'Nova Square', cursive
+
+
+
+
+//Gallery
+#gallery
+	@extend .reset
+
+	background-color: white
+
+	.row
+		
+		div
+			@extend .vcenter
+
+			padding: 5%
+
+			h2
+				font-weight: bold
+				padding-bottom: 6%
+				letter-spacing: 3px
+				font-family: 'Nova Square', cursive
+				
+			p
+				line-height: 1.5em
+				font-family: cursive
+
+//helper class for vertical aligning		
+.vcenter 
+	display: inline-block
+	vertical-align: middle
+	float: none
+	
+
+
+
+//Side bar
+#sideMenu
+	position: fixed
+	top: 45%
+	right: 0.5%
+	transform: translate(-40%,0)
+
+	opacity: 0.5
+
+	z-index: 1000
+	
+	padding: 0.8em
+	background-color: rgba(0,0,0,0.7)
+	border: none
+
+	//Hide sidemenu before any scroll
+	display: none
+
+	a
+		position: relative
+		width: 1.2em
+		height: 1.2em
+		display: block
+		border: 3px solid $grey
+		border-radius: 50%
+
+	a:hover
+		background-color: $grey
+
+	.line
+		width: 0
+		height: 2em
+		border: 1px solid $grey
+		margin: auto
+
+
+	a::after
+		position: absolute
+		content: "Change"
+		display: block
+		right: 1.5em
+		top: 50%
+		transform: translate(0,-50%)
+		width: 0
+		font-size: 1.3em
+		overflow: hidden
+		transition: all 0.4s ease
+
+	a:hover::after
+		width: 3.5em
+
+//Add this class to the active sidebar circle
+.highlight
+	background-color: $red
+
+
+
+//Benefits 
+#benefits
+	@extend .reset
+
+	background-color: #5b8ad4
+	padding: 2% 0
+	
+	h1
+		text-align: center
+		padding: 2%
+		font-family: 'Nova Square', cursive
+		color: white
+	.row
+		div 
+			margin: 5% 0
+		i 
+			font-size: 4em
+			display: block
+			text-align: center
+			margin-bottom: 15%
+		p
+			text-align: center
+			font-size: 1.3em
+			padding: 4%
+			color: white
+
+		button
+			margin: auto
+			display: block
+
+
+
+
+//Reviews
+#review
+	//@extend .reset
+
+	padding-bottom: 5em
+	background-color: $red 
+	border: 1px solid transparent
+
+	h1
+		text-align: center
+		padding: 1em
+		font-family: 'Nova Square', cursive
+
+	#slider
+		@extend .reset
+
+		background-color: $sky-blue
+
+		width: 70%
+		padding-bottom: 6%
+		padding-top: 6%
+		margin: auto
+
+		blockquote
+			position: relative
+			top: 50%
+			transform: translate(0,-50%)
+			border: none
+
+			p, small
+				color: $grey
+
+		.carousel-control
+			font-size: 10px
+			color: $grey
+
+
+
+
+//Contact
+#contact
+	@extend .reset
+
+	background-color: rgba(0,0,0,0.8)
+	
+	display: flex
+	flex-wrap: wrap
+	
+	h1
+		font-family: 'Nova Square', cursive
+		text-align: center
+
+	i
+		font-size: 2em
+		color: $red
+		margin-top: 1em
+		margin-right: 0.3em
+		transition: all 0.5s
+		cursor: pointer
+		position: relative
+
+	i:hover
+		transform: scale(1.5)
+	p
+		font-size: 1.4em
+
+	.row * 
+		margin: 0!important
+		
+
+	.row button
+		border: 1px solid grey
+		background-color: $red!important
+
+	#map
+		width: 100%
+		height: 150px
+		margin: 1em auto
+
+#contact > div > *
+	text-align: center
+	color: $grey
+
+#contact > div
+	display: flex
+	flex-direction: column	
+	justify-content: space-between
+
+#contact > div *:last-child
+	margin-bottom: 1em
+	
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 920px)
+	.navbar
+		.navbar-right > li, div.navbar-header
+			padding: 10px 15px 
+	.reset
+		padding-left: 4%
+		padding-right: 4%
+	#sideMenu
+		transform: scale(0.8)
+
+@media only screen and (max-width: 700px)
+	#sideMenu
+		display: none	
+	div.jumbotron:first-of-type div
+		width: 100%
+		h1
+			line-height: 1.5em	
+
+@media only screen and (max-width: 350px)
+	.navbar
+		.navbar-right > li, div.navbar-header
+			padding: 0 0 
+			font-size: 0.8em
+		div.navbar-header
+			padding-left: 1.5em
+	.reset
+		padding-left: 1%
+		padding-right: 1%
+
+@media only screen and(max-width: 767px)
+	div.jumbotron:first-of-type div h1
+		font-size: 2.8em
+	div.jumbotron:first-of-type button
+		font-size: 1.2em
+	#gallery div.row:nth-of-type(2)
+		display: table
+		div:first-child
+			display: table-footer-group
+		div:last-child
+			display: table-footer-group
+	.vcenter * 
+		display: block
+		margin: auto
+		text-align: center
+	.vcenter
+		h2
+			padding: 20px
+		p
+			padding: 10px 0 20px 0
+		

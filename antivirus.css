@@ -1,0 +1,292 @@
+.container-fluid {
+  padding: 0;
+  overflow: hidden;
+  width: 100vw; }
+
+html {
+  overflow-x: hidden !important; }
+
+.reset, .navbar, div.jumbotron:first-of-type, #gallery, #benefits, #review #slider, #contact {
+  padding: 0 10%;
+  border-radius: 0;
+  margin: 0; }
+
+.btn {
+  outline: none;
+  border: none; }
+
+.btn:focus, .btn:active {
+  outline: none; }
+
+.btn:active {
+  box-shadow: inset 0 0.1px 7px 0.3px rgba(0, 0, 0, 0.6); }
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: all 0.5s ease; }
+  .navbar .navbar-brand {
+    font-size: 1.9em;
+    color: #e7e7e7;
+    font-family: "Nova Square", cursive;
+    position: relative; }
+  .navbar .navbar-collapse ul li a {
+    font-size: 1.2em;
+    color: #e7e7e7;
+    font-family: "Nova Square", cursive; }
+  .navbar .navbar-header, .navbar .navbar-right > li {
+    padding: 15px 25px; }
+  .navbar a span {
+    background-image: url("https://cdn2.iconfinder.com/data/icons/real-flat-security/512/accept-512.png");
+    background-size: cover;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: -1em;
+    transform: translate(0, -50%); }
+
+.navbar, .navbar * {
+  transition: all 0.5s ease;
+  font-family: "Nova Square", cursive; }
+
+.smallNavbar {
+  background-color: black; }
+  .smallNavbar .navbar-header, .smallNavbar .navbar-right > li {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important; }
+
+div.jumbotron:first-of-type {
+  height: 100vh;
+  background-image: url(http://www.agenda-screening.co.uk/agenda-cms/uploads/agenda-old-news-images/2014/06/CyperSecurity.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  border: 1px solid transparent; }
+  div.jumbotron:first-of-type div {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1em; }
+    div.jumbotron:first-of-type div h1 {
+      font-size: 3.5em;
+      padding-bottom: 1em;
+      color: #e7e7e7;
+      line-height: 2em; }
+    div.jumbotron:first-of-type div button {
+      background-color: #f04b4c;
+      outline: none;
+      border: none; }
+    div.jumbotron:first-of-type div button:focus {
+      outline: none;
+      border: none; }
+  div.jumbotron:first-of-type div > * {
+    color: white;
+    font-family: "Nova Square", cursive; }
+
+#gallery {
+  background-color: white; }
+  #gallery .row div {
+    padding: 5%; }
+    #gallery .row div h2 {
+      font-weight: bold;
+      padding-bottom: 6%;
+      letter-spacing: 3px;
+      font-family: "Nova Square", cursive; }
+    #gallery .row div p {
+      line-height: 1.5em;
+      font-family: cursive; }
+
+.vcenter, #gallery .row div {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+#sideMenu {
+  position: fixed;
+  top: 45%;
+  right: 0.5%;
+  transform: translate(-40%, 0);
+  opacity: 0.5;
+  z-index: 1000;
+  padding: 0.8em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  display: none; }
+  #sideMenu a {
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+    display: block;
+    border: 3px solid #e7e7e7;
+    border-radius: 50%; }
+  #sideMenu a:hover {
+    background-color: #e7e7e7; }
+  #sideMenu .line {
+    width: 0;
+    height: 2em;
+    border: 1px solid #e7e7e7;
+    margin: auto; }
+  #sideMenu a::after {
+    position: absolute;
+    content: "Change";
+    display: block;
+    right: 1.5em;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 0;
+    font-size: 1.3em;
+    overflow: hidden;
+    transition: all 0.4s ease; }
+  #sideMenu a:hover::after {
+    width: 3.5em; }
+
+.highlight {
+  background-color: #f04b4c; }
+
+#benefits {
+  background-color: #5b8ad4;
+  padding: 2% 0; }
+  #benefits h1 {
+    text-align: center;
+    padding: 2%;
+    font-family: "Nova Square", cursive;
+    color: white; }
+  #benefits .row div {
+    margin: 5% 0; }
+  #benefits .row i {
+    font-size: 4em;
+    display: block;
+    text-align: center;
+    margin-bottom: 15%; }
+  #benefits .row p {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 4%;
+    color: white; }
+  #benefits .row button {
+    margin: auto;
+    display: block; }
+
+#review {
+  padding-bottom: 5em;
+  background-color: #f04b4c;
+  border: 1px solid transparent; }
+  #review h1 {
+    text-align: center;
+    padding: 1em;
+    font-family: "Nova Square", cursive; }
+  #review #slider {
+    background-color: #3d6098;
+    width: 70%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    margin: auto; }
+    #review #slider blockquote {
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+      border: none; }
+      #review #slider blockquote p, #review #slider blockquote small {
+        color: #e7e7e7; }
+    #review #slider .carousel-control {
+      font-size: 10px;
+      color: #e7e7e7; }
+
+#contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-wrap: wrap; }
+  #contact h1 {
+    font-family: "Nova Square", cursive;
+    text-align: center; }
+  #contact i {
+    font-size: 2em;
+    color: #f04b4c;
+    margin-top: 1em;
+    margin-right: 0.3em;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative; }
+  #contact i:hover {
+    transform: scale(1.5); }
+  #contact p {
+    font-size: 1.4em; }
+  #contact .row * {
+    margin: 0 !important; }
+  #contact .row button {
+    border: 1px solid grey;
+    background-color: #f04b4c !important; }
+  #contact #map {
+    width: 100%;
+    height: 150px;
+    margin: 1em auto; }
+
+#contact > div > * {
+  text-align: center;
+  color: #e7e7e7; }
+
+#contact > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#contact > div *:last-child {
+  margin-bottom: 1em; }
+
+@media only screen and (max-width: 920px) {
+  .navbar .navbar-right > li, .navbar div.navbar-header {
+    padding: 10px 15px; }
+
+  .reset, .navbar, div.jumbotron:first-of-type, #gallery, #benefits, #review #slider, #contact {
+    padding-left: 4%;
+    padding-right: 4%; }
+
+  #sideMenu {
+    transform: scale(0.8); } }
+@media only screen and (max-width: 700px) {
+  #sideMenu {
+    display: none; }
+
+  div.jumbotron:first-of-type div {
+    width: 100%; }
+    div.jumbotron:first-of-type div h1 {
+      line-height: 1.5em; } }
+@media only screen and (max-width: 350px) {
+  .navbar .navbar-right > li, .navbar div.navbar-header {
+    padding: 0 0;
+    font-size: 0.8em; }
+  .navbar div.navbar-header {
+    padding-left: 1.5em; }
+
+  .reset, .navbar, div.jumbotron:first-of-type, #gallery, #benefits, #review #slider, #contact {
+    padding-left: 1%;
+    padding-right: 1%; } }
+@media only screen and (max-width: 767px) {
+  div.jumbotron:first-of-type div h1 {
+    font-size: 2.8em; }
+
+  div.jumbotron:first-of-type button {
+    font-size: 1.2em; }
+
+  #gallery div.row:nth-of-type(2) {
+    display: table; }
+    #gallery div.row:nth-of-type(2) div:first-child {
+      display: table-footer-group; }
+    #gallery div.row:nth-of-type(2) div:last-child {
+      display: table-footer-group; }
+
+  .vcenter *, #gallery .row div * {
+    display: block;
+    margin: auto;
+    text-align: center; }
+
+  .vcenter h2, #gallery .row div h2 {
+    padding: 20px; }
+  .vcenter p, #gallery .row div p {
+    padding: 10px 0 20px 0; } }
+
+/*# sourceMappingURL=antivirus.css.map */
