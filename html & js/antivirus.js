@@ -1,7 +1,4 @@
-//jshint esversion:6 
-
-$(document).ready(function(){
-
+$(document).ready(function () {
 	//Reduce navbar size and add sidemenu on scroll
   $(window).scroll(function(){
 

@@ -58,7 +58,7 @@ html {
 
 div.jumbotron:first-of-type {
   height: 100vh;
-  background-image: url(http://www.agenda-screening.co.uk/agenda-cms/uploads/agenda-old-news-images/2014/06/CyperSecurity.jpg);
+  background-image: url(../images/CyperSecurity.jpg);
   background-size: cover;
   background-attachment: fixed;
   border: 1px solid transparent; }
